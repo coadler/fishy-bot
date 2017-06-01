@@ -81,7 +81,7 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 
 func fish(msg *discordgo.Message) (string, error) {
 	json, _ := json.Marshal(msg)
-	resp, err := http.Post(config.API.BaseURL+config.API.FishPath, "application/json", bytes.NewBuffer(json))
+	resp, err := http.Post(config.API.BaseURL+config.API.Paths.Fish, "application/json", bytes.NewBuffer(json))
 	if err != nil {
 		return "", err
 	}

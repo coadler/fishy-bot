@@ -4,9 +4,9 @@
         "admins": [ "dev1", "dev2", "dev3" ]
     },
     "api": {
-        "baseurl": "url to api",
+        "baseurl": "http://127.0.0.1:8080",
         "paths": {
-            "fish": "/fish"
+            "fish": "/v1/fish"
         }
     }
 }
